@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palni Test</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./tailwind.config.js">
+</head>
+<body class="font-sans bg-white">
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm py-4 px-6 shadow-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-serif font-bold text-rose-600">Palni</h1>
+      <div class="hidden md:flex space-x-8">
+        <a href="#" class="text-gray-700 hover:text-rose-600 transition-colors">EXCLUSIVE</a>
+        <a href="#" class="text-gray-700 hover:text-rose-600 transition-colors">ACCESSORIES</a>
+        <a href="#" class="text-gray-700 hover:text-rose-600 transition-colors">ABOUT US</a>
+        <a href="#" class="text-gray-700 hover:text-rose-600 transition-colors">SHOWCASE</a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <i class="fas fa-search text-lg text-gray-700 hover:text-rose-600 cursor-pointer"></i>
+        <i class="fas fa-user text-lg text-gray-700 hover:text-rose-600 cursor-pointer"></i>
+        <div class="relative">
+          <i class="fas fa-shopping-bag text-lg text-gray-700 hover:text-rose-600 cursor-pointer"></i>
+          <span class="absolute -top-1 -right-1 bg-rose-600 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">2</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative pt-24 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="./assets/Hero.jpg" alt="Skincare products" class="w-full h-full object-cover object-top">
+      <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 py-20 md:py-32 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          
+          <!-- Left: Text -->
+          <div class="max-w-xl">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-light leading-tight text-gray-800 mb-6">
+              Take care of <br><span class="font-medium">Your Skin</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-8">
+              Discover our collection of premium skincare products made with natural ingredients to reveal your skin's true luminosity.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <button class="bg-blue-400 hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all shadow-lg hover:shadow-xl">Shop Now</button>
+              <button class="bg-transparent border border-gray-300 hover:border-rose-600 text-gray-700 hover:text-rose-600 px-8 py-3 rounded-full transition-all">Learn More</button>
+            </div>
+          </div>
+    
+          <!-- Right: Image -->
+          <div class="w-full">
+            <img src="./assets/Product.png" alt="Skincare products" class="w-3/4 md:w-2/3 lg:w-1/2  mx-auto h-auto rounded-xl shadow-md">
+          </div>
+    
+        </div>
+      </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="text-center mb-12 px-4">
+      <h2 class="text-3xl md:text-4xl font-serif font-medium text-gray-800">Features of the Product!</h2>
+      <p class="mt-2 text-gray-600 max-w-xl mx-auto">
+        Engaging and market-friendly features for a skin product<br />
+        control your skin buy our products
+      </p>
+    </div>
+  
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-6xl mx-auto items-center px-4">
+      
+      <!-- Left Column -->
+      <div class="space-y-20 text-right">
+        <div>
+          <h3 class="text-xl font-serif font-medium text-gray-800">100% Natural</h3>
+          <p class="text-gray-600 text-sm mt-1">Engaging and market-friendly features for a skin product<br>control your skin buy our products</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-serif font-medium text-gray-800">Eco-Friendly</h3>
+          <p class="text-gray-600 text-sm mt-1">Engaging and market-friendly features for a skin product<br>control your skin buy our products</p>
+        </div>
+      </div>
+  
+      <!-- Center Image -->
+      <div class="flex justify-center relative">
+        <div class="bg-[#c3e9fa] w-64 h-64 rounded-b-full flex items-end justify-center">
+          <img src="./assets/product2.png" alt="product bottle" class="h-80 object-contain" />
+        </div>
+      </div>
+  
+      <!-- Right Column -->
+      <div class="space-y-20 text-left">
+        <div>
+          <h3 class="text-xl font-serif font-medium text-gray-800">Approved</h3>
+          <p class="text-gray-600 text-sm mt-1">Engaging and market-friendly features for a skin product<br>control your skin buy our products</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-serif font-medium text-gray-800">Results</h3>
+          <p class="text-gray-600 text-sm mt-1">Engaging and market-friendly features for a skin product<br>control your skin buy our products</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <!-- Product Highlights -->
+  <section class="py-16 bg-white">
+    <div class="text-center mb-12 px-4">
+      <h2 class="text-3xl md:text-4xl font-serif font-medium text-gray-800">Our Bestsellers</h2>
+      <p class="mt-2 text-gray-600 max-w-xl mx-auto">
+        Explore our top-rated skincare products trusted by thousands.
+      </p>
+    </div>
+  
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+      
+      <!-- Product 1 -->
+      <div class="bg-white border border-gray-200 rounded-lg shadow-md p-4 text-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3JXS_Mv8ubSdY9XKRB4TQdrNIJzJYEmU3oA&s" alt="Product 1" class="w-full h-48 object-contain mb-4" />
+        <h3 class="text-lg font-semibold text-[#005672]">Hydrating Cleanser</h3>
+        <p class="text-gray-500 mt-1">₹799</p>
+      </div>
+  
+      <!-- Product 2 -->
+      <div class="bg-white border border-gray-200 rounded-lg shadow-md p-4 text-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNUx7gLX8HEEecTe1ChEcVKIQWITpY2i8mHA&s" alt="Product 2" class="w-full h-48 object-contain mb-4" />
+        <h3 class="text-lg font-semibold text-[#005672]">Vitamin C Serum</h3>
+        <p class="text-gray-500 mt-1">₹999</p>
+      </div>
+  
+      <!-- Product 3 -->
+      <div class="bg-white border border-gray-200 rounded-lg shadow-md p-4 text-center">
+        <img src="data:image/jpeg;base64,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" alt="Product 3" class="w-full h-48 object-contain mb-4" />
+        <h3 class="text-lg font-semibold text-[#005672]">Soothing Moisturizer</h3>
+        <p class="text-gray-500 mt-1">₹699</p>
+      </div>
+  
+      <!-- Product 4 -->
+      <div class="bg-white border border-gray-200 rounded-lg shadow-md p-4 text-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_DEY0fRkRe3dLlFXEs0SdqsDtxHw1MV-hNQ&s" alt="Product 4" class="w-full h-48 object-contain mb-4" />
+        <h3 class="text-lg font-semibold text-[#005672]">Sunscreen SPF 50+</h3>
+        <p class="text-gray-500 mt-1">₹899</p>
+      </div>
+  
+    </div>
+  </section>
+  
+  <!-- Newsletter Section -->
+  <section class="py-16 md:py-20 bg-rose-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl md:text-4xl font-serif font-medium text-gray-800 mb-4">Join Our Community</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Subscribe to receive exclusive offers, skincare tips, and be the first to know about new product launches.</p>
+      </div>
+      <div class="max-w-xl mx-auto">
+        <form class="flex flex-col md:flex-row gap-4">
+            <input 
+            type="email" 
+            placeholder="Your email address" 
+            class="flex-grow px-4 py-3 rounded-full border border-gray-300 hover:border-[#8DD6FF] transition-all duration-300 focus:ring-2 focus:ring-blue-300 outline-none text-sm" 
+            required 
+          />
+                    <button type="submit" class="bg-blue-400 hover:bg-blue-700 text-white px-6 py-3 rounded-full transition-colors">Subscribe</button>
+        </form>
+        <p class="text-gray-500 text-xs mt-4 text-center">By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-gray-200 py-16" style="background-color: #4D5C61;">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        
+        <!-- Column 1: Brand -->
+        <div>
+          <h3 class="text-xl font-serif font-bold text-white mb-6">Plani</h3>
+          <p class="mb-6">Premium skincare made with natural ingredients for radiant, healthy skin.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+  
+        <!-- Column 2: Product Pages -->
+        <div>
+          <h4 class="text-white font-semibold mb-6">Products</h4>
+          <ul class="space-y-3">
+            <li><a href="/hydrating-cleanser.html" class="text-gray-300 hover:text-white">Hydrating Cleanser</a></li>
+            <li><a href="/vitamin-c-serum.html" class="text-gray-300 hover:text-white">Vitamin C Serum</a></li>
+            <li><a href="/soothing-moisturizer.html" class="text-gray-300 hover:text-white">Soothing Moisturizer</a></li>
+            <li><a href="/spf-sunscreen.html" class="text-gray-300 hover:text-white">Sunscreen SPF 50+</a></li>
+          </ul>
+        </div>
+  
+        <!-- Column 3: Pages -->
+        <div>
+          <h4 class="text-white font-semibold mb-6">Pages</h4>
+          <ul class="space-y-3">
+            <li><a href="/about.html" class="text-gray-300 hover:text-white">Exclusive</a></li>
+            <li><a href="/shop.html" class="text-gray-300 hover:text-white">Accessories</a></li>
+            <li><a href="/offers.html" class="text-gray-300 hover:text-white">About Us</a></li>
+            <li><a href="/contact.html" class="text-gray-300 hover:text-white">Showcase</a></li>
+          </ul>
+        </div>
+  
+        <!-- Column 4: Support -->
+        <div>
+          <h4 class="text-white font-semibold mb-6">Support</h4>
+          <ul class="space-y-3">
+            <li><a href="/faq.html" class="text-gray-300 hover:text-white">FAQs</a></li>
+            <li><a href="/shipping.html" class="text-gray-300 hover:text-white">Shipping & Returns</a></li>
+            <li><a href="/privacy.html" class="text-gray-300 hover:text-white">Privacy Policy</a></li>
+            <li><a href="/terms.html" class="text-gray-300 hover:text-white">Terms & Conditions</a></li>
+          </ul>
+        </div>
+  
+      </div>
+  
+      <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+        © 2025 Palni Skincare. All rights reserved & designed and develped by Santhosh Gavireddy.
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
